@@ -158,7 +158,7 @@ public class Estoque extends Produtos{
     //============LISTA URGENTE==================================================================================================
     public void urgente(){
 
-        if(listaUrgente.size() != 0){
+        if(listaUrgente.size() > 0){
             for(Produtos p : listaUrgente){
                 if(p.getQuantidade() >= 20){
                     listaUrgente.remove(p);
